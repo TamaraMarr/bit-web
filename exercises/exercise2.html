@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Travel reservation form</title>
+</head>
+<body>
+    <h1>Travel reservation form</h1>
+
+    <h2>* denotes mandatory</h2>
+
+    <br>
+
+    <form>
+        <label for="ime">Full name*:</label><br>
+            <input type="text" name="name" id="ime" placeholder="FirstName LastName" size="20">
+
+        <br>
+
+        <label for="mejl">Email address*:</label><br>
+            <input type="email" name="email" id="mejl" size="20">
+
+        <br>
+
+        <label for="paket">Select Tour Package*:</label><br>
+            <select name="package" id="paket">
+                <option value="london" checked="checked">London</option>
+                <option value="moscow">Moscow</option>
+                <option value="tokyo">Tokyo</option>
+            </select>
+        
+        <br>
+
+        <label for="dolazak">Arrival date*:</label><br>
+            <input type="date" name="date" id="dolazak">
+
+        <br>
+    
+        <label for="brosoba">Number of persons*:</label><br>
+            <input type="text" name="brosoba" id="brosoba" size="20">
+
+        <br>
+
+        What would you want to avail?*<br>
+        Boarding<input type="checkbox" name="otkrice[]"><br>
+        Fooding<input type="checkbox" name="otkrice[]"><br>
+        Sight seeing<input type="checkbox" name="otkrice[]"><br>
+
+        Discount Coupon Code <br>
+            <input type="text" name="popust" size="20" placeholder="UNKNOWN_TYPE">
+        
+        <br>
+
+        <label for="uslovi">Terms and conditions</label><br>
+            <input type="radio" name="uslovi" id="uslovi">I agree
+            <input type="radio" name="uslovi">I disagree
+
+        <br>
+
+        <input type="submit" value="Complete reservation">
+    </form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation Request</title>
+</head>
+
+<body>
+    <h1>Reservation Request</h1>
+    <fieldset>
+        <legend><b>General Information</b></legend>
+        <form>          
+            <label for="datum">Arrival date:</label>
+                <input type="date" name="datum" id="datum">
+            
+            <br>
+
+            <label for="noci">Nights:</label>
+                <input type="text" name="noci" id="noci">
+            
+            <br>
+
+            <label for="odrasli">Adults:</label>
+                <select name="odrasli" id="odrasli">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+            <br>
+
+            <label for="deca">Children:</label>
+                <select name="deca" id="deca">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+    </fieldset>
+
+    <fieldset>
+        <legend><b>Preferences</b></legend>
+            <label for="tipsobe">Room type</label>
+                <input type="radio" name="tipsobe" value="Standard" id="tipsobe" checked="checked">
+                <input type="radio" name="tipsobe" value="Business">
+                <input type="radio" name="tipsobe" value="Suite">
+            <br>
+
+            <label for="tipkreveta">Bed type:</label>
+                <input type="radio" name="tipkreveta" value="King" id="tipkreveta" checked="checked">
+                <input type="radio" name="tipkreveta" value="Double Double">
+
+            <br>
+
+            <input type="checkbox"> Smoking
+    </fieldset>
+
+    <fieldset>
+        <legend>Contact Information</legend>
+            <label for="ime">Name:</label>
+                <input type="text" name="name" id="ime" size="20">
+
+            <br>
+
+            <label for="imejl">Email:</label>
+                <input type="email" name="email" id="imejl" size="20">
+
+            <br>
+
+            <label for="fon">Phone:</label>
+                <input type="text" name="phone" id="fon" size="20">
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+
+    </form>
+</body>
+</html>
