@@ -1,0 +1,27 @@
+#first {
+    text-align: left;
+}
+#second {
+    text-align: right;
+}
+#third {
+    text-align: center;
+}
+
+a {
+    text-shadow: 6px 6px 0px rgba(241, 150, 150, 1);
+    
+}
+a:link {
+    color: red;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: green;
+   opacity: 0;
+}
+a:active {
+    color: blue;
+}
