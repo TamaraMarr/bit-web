@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+h1 {
+    background-color: rgb(161, 15, 15);
+    font-size: 47px;
+    font-weight: bold;
+    text-align: center;
+    width: 960px;
+    font-family: "Indie Flower";
+    color: rgb(224, 180, 36);
+    padding: 50px 0px;
+    margin: 50px auto;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    border-radius: 10px 5px 15px 7px;
+}
+.reddashed {
+    border: red dashed;
+}
+
+#first {
+    width: 300px;
+}
+#second {
+    width: 400px;
+    border: green solid;
+    display: none;
+}
+#third {
+    width: 200px;
+}
+
+p {
+    margin-right: 20px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#firstul {
+    list-style: circle;
+}
+
+#secondul {
+    list-style: square;
+}
+
+#firstol {
+    list-style: upper-alpha;
+}
+
+#secondol {
+    list-style: lower-roman;
+}
+#firstadditional{
+    width: 200px;
+    list-style-position: outside;
+    list-style-image: url("https://vignette.wikia.nocookie.net/d3311daf-1eda-44d1-ac3b-f58312941c79/scale-to-width-down/30");
+}
+#secondadditional{
+    width: 200px;
+    list-style-position: inside;
+    list-style-image: url("https://vignette.wikia.nocookie.net/d3311daf-1eda-44d1-ac3b-f58312941c79/scale-to-width-down/30");
+}
