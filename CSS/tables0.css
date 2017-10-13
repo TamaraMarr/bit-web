@@ -1,0 +1,46 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: firebrick;
+    font-size: 55px;
+    text-align: center;
+}
+
+table {
+    font-size: 18px;
+    margin: 20px auto;
+    width: 600px;
+    border-collapse: collapse; 
+    background-color: rgb(230, 230, 230);
+}
+
+img {
+    height: 100px;
+    padding: 3px auto;
+}
+
+td {
+    padding: 8px 13px;
+}
+
+tr:hover {
+    background-color: orange;
+}
+
+th {
+    color: white;
+    background-color: firebrick;
+    height: 40px;
+}
+
+.white {
+    background-color: rgba(255, 255, 255, 0.993);
+
+}
+
+.image-cell {
+    text-align: center;
+}
+
