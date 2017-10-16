@@ -1,0 +1,47 @@
+#containerdiv {
+    margin: 0px auto;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: firebrick;
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.secondred {
+    position: absolute;
+    right: 10px;
+    z-index: 3;
+}
+
+.secondorange {
+    position: absolute;
+    right: 110px;
+    top: 750px;
+    z-index: 2;
+}
+
+.secondblue {
+    position: absolute;
+    right: 210px;
+    top: 800px;
+    z-index: 1;
+}
