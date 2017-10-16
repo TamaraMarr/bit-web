@@ -1,0 +1,38 @@
+#maindiv {
+    position: relative;
+    margin: 0px auto;
+    width: 960px;
+}
+
+img {
+    width: 200px;
+}
+
+#first {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    margin-bottom: 50px;
+}
+
+#second {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#third {
+    position: absolute;
+    left: 380px;
+    bottom: 0px;
+}
+
+#toptop {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+#uparrow {
+    width: 50px;
+}

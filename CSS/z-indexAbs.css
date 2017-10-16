@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#rel {
+    position: relative;
+    background-color: black;
+}
+.box {
+    height: 200px;
+    width: 200px;
+}
+
+.absolute-position {
+    position: absolute;
+}
+
+.red {
+    background-color: red;
+    right: 100px;
+    top: 100px;
+    z-index: 3;
+}
+
+.orange {
+    background-color: orange;
+    right: 200px;
+    top: 200px;
+    z-index: 2;
+}
+
+.blue {
+    background-color: blue;
+    right: 300px;
+    top: 300px;
+    z-index: 1;
+}
