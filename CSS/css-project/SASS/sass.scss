@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Nosifer');
+@import 'mixins';
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+$header-font: 'Nosifer', cursive;
+$primary-color: white;
+$picircle: 50%; 
+
+header {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+}
+
+#headerdiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#table {
+   display: table;
+   width: 100%;
+   height: 100%;
+   
+}
+
+#table div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#table p {
+    text-align: center;
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 0px 10px;
+}
+
+button {
+    background-color: rgb(79, 79, 182);
+    border-radius: 20px;
+    padding: 10px;
+    color: $primary-color;
+    width: 30%;
+    border: none;
+    
+}
+
+h1 span {
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    border-left: solid 3px black;
+    color: orange;
+    padding-left: 7px;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 35px auto;
+    font-family: $header-font;
+}
+
+@import 'nav';
+
+@media screen and (min-width: 768px) {
+    h1 {
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        margin: 0;
+        display: inline-block;
+        font-family: $header-font;
+    } 
+    nav ul {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 15px;
+    
+        li {
+            display: inline-block;
+        }
+    }    
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 200%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: $header-font;
+}
+
+h3 {
+    color: rgb(69, 69, 194);
+    text-transform: capitalize;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    font-family: $header-font;
+}
+
+main img {
+    width: 100%;
+}
+
+.pic {
+    border-radius: 50%;
+    width: 20%;
+    border: 2px solid $primary-color;
+    padding: 5px;
+    float: left;    
+}
+
+@media screen and (min-width: 768px){
+    body {
+        font-size: 1.2rem;
+    }
+
+    .poseban-div {
+        margin-top: 630px;
+    }
+
+    .section-left {
+        width: 50%;
+        float: left;
+    }
+    main img {
+        width: 50%;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .section-left {
+        width: 31%;
+        margin: 0 10px;
+    }
+
+    main img {
+        width: 31%;
+        float: left;
+        margin: 0 10px;
+    }
+
+    .poseban-div {
+        width: 31%;
+        float: right;
+        margin: 0 10px;
+    }
+
+    .wppls {
+        margin-top: 500px;
+    }
+}
+
+article {
+    background-color: rgb(153, 199, 218);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    float: left;
+    padding-left: 20px;
+    font-family: $header-font;
+}
+
+article p {
+    clear: left;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .box {
+        max-width: 45.5%;
+        margin-top: 9px;
+    }
+
+    .box {@include box-shadow(13px);}
+
+    .box-1 {
+        float: left;  
+    }
+    .box-2 {
+        float: right;
+    }
+    .box-3 {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .contacts {
+        margin-top: 700px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .box {
+    max-width: 29%;
+    margin: 0 auto;
+    }
+    .box-1 {
+        float: left;
+        margin-right: 11px;
+    }
+    .box-2 {
+        float: left;
+    }
+    .box-3 {
+        float: right;
+    }
+}

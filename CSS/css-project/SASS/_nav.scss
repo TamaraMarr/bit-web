@@ -1,0 +1,22 @@
+nav {
+    width: 90%;
+    margin: 0px auto;
+    background-color: rgb(153, 199, 218);
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: $primary-color;
+
+    ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+    li {
+        padding: 11px 11px;
+    }
+
+    li:hover {
+        background-color: red;
+    }
+}

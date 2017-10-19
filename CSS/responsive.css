@@ -32,15 +32,18 @@ article::after {
 }
 
 @media only screen and (min-width: 576px) {
-    .box>img {
+    .box {
+        width: 100%;
+    }
+    .box img {
         width: 30%;
         float: left;
         display: table-cell;
         vertical-align: middle;
-        margin: 7px
+        margin: 7px;
     }
     
-    .box>p {
+    .box p {
         font-size: 0.9em;
         width: 60%;
         padding: 3px 10px;
@@ -55,12 +58,16 @@ article::after {
 }
 
 @media only screen and (min-width: 768px) {
-    .box>img {
+    .box {
+        width: 30%;
+    }
+    
+    .box img {
         width: 50%;
         margin: 0px auto 10px 0px;
     }
     
-    .box>p {
+    .box p {
         font-size: 1em;
         width: 100%;
         padding: 3px 10px;
@@ -71,7 +78,7 @@ article::after {
     }
     
     .box {
-        height: 600px;
+        height: 650px;
     }
 
     article {
