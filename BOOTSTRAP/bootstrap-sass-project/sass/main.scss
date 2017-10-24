@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import 'mixins'; 
+$white: white;
+$greenish: #18bc9c;
 
 body {
     font-family: 'Lato', sans-serif;
@@ -7,25 +10,29 @@ body {
 .navbar {
     background-color: #2c3e50;
     button {
-        color: #fff;
+        color: $white;
         background-color: #18bc9c;
         span {
-            color: #fff!important;
+            filter: invert(100%);
         }
     }
     .navbar-brand {
-        color: #fff;
         text-transform: uppercase;
         font-weight: bold;
     }
     a {
-        color: #fff;
+        color: $white;
     }
 }
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+    color: $white;
+}
+
+
 
 .header {
     background-color: #18bc9c;
-    color: #fff;
+    color: $white;
     text-align: center;
     padding: 30px 0;
     .main-title {
@@ -33,13 +40,10 @@ body {
         font-weight: bold;
         margin-top: 25px;
     }
-    p>i {
-        font-size: 2em;
-        margin-top: 10px;
-    }
     p {
         font-size: 1.3em;
     }
+    @include border-star ($greenish, $white);
 }
 
 .main-content {
@@ -52,10 +56,7 @@ body {
             font-weight: bold;
             font-size: 2.3em;
         }
-        p>i {
-            font-size: 2em;
-            margin-top: 10px;
-        }
+        @include border-star ($white, black);
         img {
             width: 100%;
             box-sizing: border-box;
@@ -64,9 +65,10 @@ body {
     }
     .about {
         padding: 50px 0;
-        background-color: #18bc9c;
+        background-color: $greenish;
+        @include border-star ($greenish, $white);
         .row {
-            color: #fff;
+            color: $white;
             p {
                 text-align: left;
                 font-size: 1.2em;
@@ -76,11 +78,11 @@ body {
                 }
             }
             button {
-                background-color: #18bc9c;
-                border: 1px solid #fff;
+                background-color: $greenish;
+                border: 1px solid $white;
                 padding: 8px 11px;
                 border-radius: 5px;
-                color: #fff;
+                color: $white;
 
             }
         }
@@ -98,10 +100,7 @@ body {
             font-weight: bold;
             font-size: 2.3em;
         }
-        p>i {
-            font-size: 2em;
-            margin-top: 10px;
-        }
+        @include border-star ($white, black);        
         form {
             width: 100%;
             input {
@@ -125,11 +124,11 @@ body {
                 font-size: 1.1em;
             }
             button {
-                background-color: #18bc9c;
-                border: 1px solid #fff;
+                background-color: $greenish;
+                border: 1px solid $white;
                 padding: 8px 11px;
                 border-radius: 5px;
-                color: #fff;
+                color: $white;
                 float: left;
                 font-weight:700;             
             }
@@ -140,7 +139,7 @@ body {
 .footer {
     background-color: #2c3e50;
     width: 100%;
-    color: #fff;
+    color: $white;
     text-align: center;
     padding: 50px 0px;
     h3 {
@@ -151,5 +150,17 @@ body {
     }
     p {
         font-size: 1.2em;
+    }
+    .social {
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 20px 0;
+        position: relative;
+        div {
+            border: 2px solid $white;
+            padding: 2px;
+            border-radius: 15px;
+            margin-left: 5px;
+        }
     }
 }
