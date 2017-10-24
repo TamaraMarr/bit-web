@@ -1,22 +1,47 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-body {
-  font-family: 'Lato', sans-serif; }
-
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900");
 .navbar {
   background-color: #2c3e50; }
   .navbar button {
-    color: white;
-    background-color: #18bc9c; }
+    background-color: #18bc9c;
+    color: white; }
     .navbar button span {
       filter: invert(100%); }
   .navbar .navbar-brand {
     text-transform: uppercase;
     font-weight: bold; }
-  .navbar a {
+  .navbar #navbarNav {
     color: white; }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-toggler {
   color: white; }
+
+.portfolio {
+  width: 100%;
+  padding: 50px 0px; }
+  .portfolio h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.3em; }
+  .portfolio .border {
+    margin: 0 auto;
+    width: 60%;
+    height: 20px;
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-bottom: 20px; }
+    .portfolio .border span {
+      background-color: white;
+      font-size: 2em;
+      position: relative;
+      bottom: 5px;
+      padding: 0 10px; }
+  .portfolio img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px 25px; }
+
+body {
+  font-family: 'Lato', sans-serif; }
 
 .header {
   background-color: #18bc9c;
@@ -25,7 +50,7 @@ body {
   padding: 30px 0; }
   .header .main-title {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900;
     margin-top: 25px; }
   .header p {
     font-size: 1.3em; }
@@ -45,30 +70,6 @@ body {
 
 .main-content {
   text-align: center; }
-  .main-content .portfolio {
-    width: 100%;
-    padding: 50px 0px; }
-    .main-content .portfolio h2 {
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 2.3em; }
-    .main-content .portfolio .border {
-      margin: 0 auto;
-      width: 60%;
-      height: 20px;
-      border-bottom: 2px solid black;
-      text-align: center;
-      margin-bottom: 20px; }
-      .main-content .portfolio .border span {
-        background-color: white;
-        font-size: 2em;
-        position: relative;
-        bottom: 5px;
-        padding: 0 10px; }
-    .main-content .portfolio img {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 7px 25px; }
   .main-content .about {
     padding: 50px 0;
     background-color: #18bc9c; }
@@ -155,24 +156,36 @@ body {
   background-color: #2c3e50;
   width: 100%;
   color: white;
-  text-align: center;
-  padding: 50px 0px; }
+  text-align: center; }
   .footer h3 {
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: 700;
-    line-height: 2; }
+    line-height: 2;
+    margin: 35px 0; }
   .footer p {
     font-size: 1.2em; }
   .footer .social {
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 20px 0;
-    position: relative; }
-    .footer .social div {
-      border: 2px solid white;
-      padding: 2px;
-      border-radius: 15px;
-      margin-left: 5px; }
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding: 13px;
+    line-height: 15px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 100%;
+    background: transparent; }
+    .footer .social i {
+      color: white; }
+  .footer .last-lines {
+    text-align: center; }
+    .footer .last-lines .copyright {
+      font-size: 1em;
+      margin-top: 50px;
+      margin-bottom: 0; }
+    .footer .last-lines .thanks {
+      font-size: 0.7em;
+      color: gray; }
 
 /*# sourceMappingURL=main.css.map */
