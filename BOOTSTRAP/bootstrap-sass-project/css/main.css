@@ -68,6 +68,12 @@ body {
       bottom: 5px;
       padding: 0 10px; }
 
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open > .nav-link {
+  color: white; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: white; }
+
 .main-content {
   text-align: center; }
   .main-content .about {

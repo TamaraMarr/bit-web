@@ -10,13 +10,13 @@ function info() {
 }
 
 function isOnline() {
-    if(navigator.onLine) {
+    if (navigator.onLine) {
         console.log("Online");
         return;
-    } 
-    
+    }
+
     console.log("Offline");
-    
+
 }
 
 function screening() {
@@ -24,7 +24,7 @@ function screening() {
     console.log('Available width is: ' + screen.availWidth + '\nAvalable height is: ' + screen.availHeight);
 }
 
-function urlInfo () {
+function urlInfo() {
     console.log('Full URL address: ' + location.href, "\nDomain name: " + location.hostname, "\nProtocol: " + location.protocol, + "\nParameters: " + location.search);
 
     console.log('Absolute: ', location.href);
@@ -49,6 +49,6 @@ function reading(key) {
         console.log('There is no data');
         return;
     }
-        console.log(key + ': ' + sessionStorage.getItem(key));
+    console.log(key + ': ' + sessionStorage.getItem(key));
 }
 
