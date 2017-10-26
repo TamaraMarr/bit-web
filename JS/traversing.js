@@ -4,5 +4,5 @@ function traversing() {
 
     var initialListParent = someNode.parentNode.parentNode;
 
-    initialListParent.nextSibling.nextSibling.childNodes[1].childNodes[3].className = "active";
+    initialListParent.nextSibling.nextSibling.children[3].className = "active";
 };
