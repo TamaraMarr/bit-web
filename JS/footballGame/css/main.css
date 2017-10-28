@@ -1,0 +1,87 @@
+body{
+    background-image: url('../img/battlefield.jpg');
+    width: 100%;
+    background-size: 100%;
+}
+
+#nenad {
+    width: 100px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+}
+
+#nenad img{
+    width: 100%;
+}
+
+#nenad button {
+    z-index: 2;
+    position: absolute;
+}
+
+#up{
+    right: 20px;
+    bottom: 40px;
+}
+
+#left{
+    right: 30px;
+    bottom: 20px;
+}
+
+#right{
+    right: 0px;
+    bottom: 20px;
+}
+
+#down{
+    right: 20px;
+    bottom: 0px;
+}
+
+#upMarko{
+    right: 20px;
+    bottom: 40px;
+}
+
+#leftMarko{
+    right: 30px;
+    bottom: 20px;
+}
+
+#rightMarko{
+    right: 0px;
+    bottom: 20px;
+}
+
+#downMarko{
+    right: 20px;
+    bottom: 0px;
+}
+
+#gameOver {
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+#marko {
+    width: 100px;
+    height: auto;
+    position: relative;
+    right: 0px;
+    display: inline-block;
+}
+
+#marko img{
+    width: 100%;
+}
+
+#marko button {
+    z-index: 2;
+    position: absolute;
+}
