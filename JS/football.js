@@ -9,7 +9,6 @@ function movePlayer(event) {
 }
 
 function stopMoving() {
-    console.log('nesto');
     body.removeEventListener('click', movePlayer);
 }
 

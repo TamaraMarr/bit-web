@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    background: #0000ff url(./img/bg.jpg) repeat-x left bottom;
+    background: left bottom #0000ff url(./img/bg.jpg) repeat-x;
 }
 
 #marioContainer {
