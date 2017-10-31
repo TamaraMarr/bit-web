@@ -12,7 +12,7 @@ function movingBG() {
         var x = 0;
         function moveBG() {
             x -= 10;
-            $('body').css('background-position', x);
+            $('body').css('background-position', 0 + x + 100 + '%');
         }
         var handle = setInterval(moveBG, 35);
 
@@ -25,5 +25,5 @@ function movingBG() {
 }
 
 var body = document.querySelector('body');
-body.addEventListener("click", movingBG);
+body.addEventListener("keydown", movingBG);
 
