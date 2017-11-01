@@ -1,3 +1,7 @@
+$('document').ready(function() {
+    $('#nice-select').niceSelect();
+  });
+
 (function () {
     var images = [
         './img/kitten1.jpg',
