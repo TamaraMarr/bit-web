@@ -11,19 +11,19 @@ function ghUsers() {
     })
 
     request.done(function (users) {
-        var userImgPath = users.items[0].avatar_url;
-        var userURLPath = users.items[0].html_url;
-        var userImg = $('<img>');
-        $(userImg).attr('src', userImgPath);
-        userImg.html(userImgPath);
+        var users = users.items;
 
-        var userURL = $('<a>');
-        userURL.text(userURLPath);
-        $(userURL).attr('href', userURLPath);
-        $('#results').html(userImg);
-        // $('#results').html(userURL);
-        
-        console.log(userImg, userURL)
+        for (var index = 0; index < users.length; index++) {
+            var userImg = $('<img>');
+            userImg.attr('src', users[index].avatar_url);
+            userImg.appendTo('#results');
+
+            var userLogin = $('<a>' + users[index].login + '</a>');
+            var userURLPath = users[index].html_url;
+            userLogin.attr('href:', userURLPath);
+            userLogin.css('display', 'block');
+            userLogin.appendTo('#results');
+        }
     });
 
     request.fail(function (jqXHR, textStatus) {
