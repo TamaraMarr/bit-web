@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <title>BitShows</title>
+    <title>BitShow</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">BitShow</a>
+        <a class="navbar-brand" href="./index.html">BitShow</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="new-icon">
@@ -21,16 +21,19 @@
             </span>
         </button>
 
-        <div class="collapse navbar-collapse pull-right" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0 ">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
+        <div class="collapse navbar-collapse justify-content-end pull-right" id="navbarSupportedContent">
+            <div class="form-inline my-2 my-lg-0 ">
+                <input class="searchLine form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <ul id="searchList">
+
+                </ul>
+            </div>
         </div>
     </nav>
 
     <main>
         <div class="container">
-            <h1>Popular, but not Necessarily Good Shows</h1>
+            <h1 class="mainTitle">Popular, but not Necessarily Good Shows</h1>
             <div class="row">
             </div>
         </div>
