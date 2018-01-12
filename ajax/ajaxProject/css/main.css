@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
 .searchLine {
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+  width: 200px; }
+
+.searchLine:focus {
+  box-shadow: none; }
 
 #searchList {
   position: absolute;
-  top: 45px;
-  border: 1px solid black;
+  top: 60px;
+  border: solid 1px black;
   border-radius: 5px;
   padding: 0;
   width: 200px;
@@ -16,7 +20,7 @@
     list-style: none;
     background-color: white;
     font-size: 1em;
-    width: 100%; }
+    width: 109%; }
   #searchList li:hover {
     background-color: #777777; }
 
@@ -81,5 +85,9 @@ span img {
     display: inline-block; }
   .container .showDescription {
     font-size: 1.1rem; }
+  .container .noResultsErrorText {
+    margin: 0 auto;
+    color: red;
+    font-style: italic; }
 
 /*# sourceMappingURL=main.css.map */

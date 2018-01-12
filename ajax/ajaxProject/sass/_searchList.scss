@@ -1,13 +1,19 @@
 .searchLine {
     position: relative;    
     z-index: 10;
+    width: 200px;
+}
+
+.searchLine:focus {
+    box-shadow: none;
 }
 
 #searchList {
     position: absolute;
-    top: 45px;
-    border: 1px solid black;
-    border-radius: 5px;
+    top: 60px;
+    border: solid 1px black;
+    border-top: none;
+    border-radius: 10px;
     padding: 0;
     width: 200px;
     z-index: 9;
@@ -16,7 +22,7 @@
         list-style: none;
         background-color: white;
         font-size: 1em;
-        width: 100%;
+        width: 109%;
     }
     li:hover {
         background-color: rgb(119, 119, 119);

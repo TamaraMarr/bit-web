@@ -37,6 +37,9 @@ span img {
 		margin-bottom: 5px;
 	}
 	.showDiv {
+		width: 100%;
+		height: auto;
+		margin-right: 0;
 		text-align: center;
 		margin-bottom: 15px;
 	}
@@ -76,5 +79,10 @@ span img {
     }
     .showDescription {
         font-size: 1.1rem;
+	}
+	.noResultsErrorText {
+        margin: 0 auto;
+		color: red;
+		font-style: italic;
     }
 }
