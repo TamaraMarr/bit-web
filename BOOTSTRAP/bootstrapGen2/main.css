@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    margin: 25px auto;
+}
+
+table, form {
+    margin-top: 50px;
+}
+
+form {
+    margin-left: 50px;
+}
